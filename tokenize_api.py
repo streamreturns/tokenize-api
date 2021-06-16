@@ -216,8 +216,9 @@ if __name__ == '__main__':
     # initialize tokenizer
     initialize_tokenizer(stage_config=stage_config, es=es, download_nltk_resources=True)
 
-    # tokenize test string
+    # test tokenizer
     test_string = '《유미의 세포들》은 이동건 작가가 2015년 4월 1일부터 네이버 웹툰에서 매주 토요일에 연재한 대한민국의 완결 웹툰이다. 2020년 11월 완결되었다. 드라마화가 확정되어 2021년 방영예정이다.'
-    tokenized_string = tokenize_text(test_string, stage_config=stage_config, indices_client=indices_client)
+    print('test string:', test_string)
 
+    tokenized_string = tokenize_text(test_string, stage_config=stage_config, indices_client=indices_client)
     print('tokenized:', tokenized_string)

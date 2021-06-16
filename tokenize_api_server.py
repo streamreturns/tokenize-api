@@ -67,5 +67,9 @@ def tokenize():
 if __name__ == '__main__':
     print('tokenize_api_server')
 
+    # initialize tokenizer
+    initialize_tokenizer(stage_config=stage_config, es=es, download_nltk_resources=False)
+
+    # run api server
     tokenize_api_port = libfa.get_stage_values('api')['port']
     tokenize_api_server.run(host='0.0.0.0', port=int(tokenize_api_port), debug=False)
