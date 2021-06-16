@@ -1,0 +1,14 @@
+[
+    {
+        "api": {
+            "port": 65400
+        },
+        "elasticsearch": {
+            "ip": "localhost",
+            "password": "(@FastAPI)",
+            "port": 9200,
+            "username": "fastapi"
+        },
+        "stage": "PDMS"
+    }
+]

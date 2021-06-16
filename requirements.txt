@@ -1,0 +1,3 @@
+nltk
+elasticsearch
+flask_cors
