@@ -1,3 +1,5 @@
 .idea
 config/stage_identifier
-docker
+docker/filesystem
+docker/filesystem.tar.bz2
+docker/resources
