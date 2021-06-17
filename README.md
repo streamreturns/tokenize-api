@@ -13,7 +13,40 @@ python download_nltk_resources.py
 ./elasticsearch-plugin install analysis-nori analysis-smartcn analysis-kuromoji
 ```
 
+## Inputs & Outputs
+### Inputs
+
+`$TEXT` will be tokenized.
+
+- GET method
+
+```
+GET http://{host}:{port}/tokenize?text=$TEXT
+```
+
+- POST method
+```
+POST http://{host}:{port}/tokenize
+    {
+        "text": $TEXT
+    }
+```
+
+### Outputs
+
+Use `$TOKENIZED_TEXT`.
+
+```
+{
+    "tokenized_text": $TOKENIZED_TEXT
+}
+```
+
+
 ## Usage
+
+You can see working code on `tokenize_api.ipynb`.
+
 ### Import `requests`
 ```
 import requests
