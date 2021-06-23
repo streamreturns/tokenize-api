@@ -16,7 +16,7 @@ python download_nltk_resources.py
 ## Inputs & Outputs
 ### Inputs
 
-`$TEXT` will be tokenized.
+Tokenize `$TEXT`.
 
 - GET method
 

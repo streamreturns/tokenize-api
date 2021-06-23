@@ -5,9 +5,9 @@
         },
         "elasticsearch": {
             "ip": "localhost",
-            "password": "(@FastAPI)",
+            "password": "",
             "port": 9200,
-            "username": "fastapi"
+            "username": "elastic"
         },
         "stage": "PDMS"
     }
