@@ -1,0 +1,16 @@
+startup_message off
+defutf8 on
+nonblock on
+vbell off
+escape /
+defscrollback 200000
+altscreen on
+term "screen-256color"
+bind ',' prev
+bind '.' next
+bind ^x
+bind x
+backtick 0 30 30 sh -c 'screen -ls | grep --color=no -o "$PPID[^[:space:]]*"'
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %m-%d %{W}%c %{g}]'
+hardstatus string '%{= Kd} %{= Kd}%-w%{= Kr}[%{= KW}%n %t%{= Kr}]%{= Kd}%+w %-= %{KG} %H%{KW}|%{KY}%`%{KW}| %Y-%m-%d %{= Kc} %C%A%{-} '
