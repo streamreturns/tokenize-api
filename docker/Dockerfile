@@ -5,10 +5,10 @@ WORKDIR /
 COPY filesystem.tar.bz2 .
 RUN tar xjf filesystem.tar.bz2
 
-RUN useradd elasticsearch
-WORKDIR /home/elasticsearch
-RUN chown -R elasticsearch /home/elasticsearch
-RUN chgrp -R elasticsearch /home/elasticsearch
+#RUN useradd elasticsearch
+#WORKDIR /home/elasticsearch
+#RUN chown -R elasticsearch /home/elasticsearch
+#RUN chgrp -R elasticsearch /home/elasticsearch
 
 WORKDIR /root
 
@@ -29,7 +29,7 @@ RUN echo "PDMS" > /root/tokenize-api/config/stage_identifier
 
 WORKDIR /root/tokenize-api
 
-EXPOSE 22 65400:65400
+#EXPOSE 65400:65400
+ENV PORT 65400
 
-ENTRYPOINT ["./run.sh"]
-
+ENTRYPOINT ["/root/tokenize-api/run.sh"]

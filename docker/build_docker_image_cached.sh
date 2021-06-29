@@ -1,2 +1,2 @@
 #/bin/bash
-docker build --tag tokenize_api .
+docker build --tag tokenize-api .

@@ -4,7 +4,7 @@
             "port": 65400
         },
         "elasticsearch": {
-            "ip": "localhost",
+            "ip": "172.31.254.202",
             "password": "",
             "port": 9200,
             "username": "elastic"
