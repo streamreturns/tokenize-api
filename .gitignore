@@ -1,4 +1,5 @@
 .idea
 config/stage_identifier
+docker/filesystem/root/.ssh
 docker/filesystem.tar.bz2
 docker/resources
